@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صفحة المنتج - صبّاط ستيل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="site-title">صبّاط ستيل</h1>
+      <img src="logo.jpeg" alt="لوغو المتجر" class="logo">
+    </div>
+  </header>
+
+  <main class="amazon-style">
+    <!-- Left side images -->
+    <div class="images">
+      <div class="main-image">
+        <img class="zoomable" src="zayd.jpeg" alt="صبّاط ستيل - صورة رئيسية">
+      </div>
+
+      <div class="thumbnails">
+        <img class="thumb zoomable active-thumb" src="hamza.jpeg" alt="thumb1">
+        <img class="thumb zoomable" src="kays.jpeg" alt="thumb2">
+        <img class="thumb zoomable" src="rassan.jpeg" alt="thumb3">
+        <img class="thumb zoomable" src="hanae.jpg" alt="thumb4">
+      </div>
+    </div>
+
+    <!-- Right side product details -->
+    <div class="details">
+      <h2 class="title">صبّاط ستيل مريح</h2>
+      <div class="stars">⭐⭐⭐⭐☆ (120 تقييم)</div>
+      <p class="price">499 درهم</p>
+
+      <p class="description">
+        هاد الصبّاط معمّر بالرّاحة والجودة. ستيل عصري وألوان مختلفة باش تناسب أي لوك.
+        مثالي للخروج، الخدمة ولا حتى للرياضة.
+      </p>
+
+      <label for="size">القياس:</label>
+      <select id="size">
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+      </select>
+
+      <label for="qty">الكمية:</label>
+      <select id="qty">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <div class="buttons">
+        <button class="add-cart">أضف إلى السلة</button>
+        <button class="buy-now" id="buy-btn">شري دابا</button>
+      </div>
+
+      <a id="whatsapp-link" class="whatsapp-btn" target="_blank" rel="noopener">
+         تواصل معانا في واتساب
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 صبّاط ستيل. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <img id="lightbox-img" src="" alt="صورة مكبرة">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close">×</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
